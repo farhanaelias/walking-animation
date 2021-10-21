@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url(../images/carton\ bg-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.walk {
+    background-image: url(../images/PikPng.com_person-walking-png_463657.png);
+    width: 291px;
+    height: 462px;
+    position: absolute;
+    top: 210px;
+    animation: walk 1s steps(8) infinite, walking 10s linear infinite;
+}
+@keyframes walk{
+    0%{
+        background-position: 0;
+    }
+
+    100%{
+        background-position: 2328px;
+    }
+
+}
+@keyframes walking{
+    0%{
+        transform:translateX(-100px);
+    }
+
+    100%{
+        transform:translateX(2000px);
+    }
+
+}
